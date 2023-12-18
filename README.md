@@ -22,9 +22,12 @@ Clone the repository:
 
 bash
 Copy code
-
+git clone https://github.com/your-username/smart-exercise-monitoring.git
 Install dependencies:
 
+bash
+Copy code
+cd smart-exercise-monitoring
 npm install
 Running the Prototype
 Run the app using Expo (assuming you have set up React Native and Expo CLI):
@@ -42,4 +45,5 @@ Notes
 This prototype uses simulated data and does not integrate with real wearable sensors or devices. It serves as a demonstration of how the system might function with actual data and device integration.
 
 Contributions
+
 Contributions to enhance this prototype or integrate with real sensor devices are welcome. Fork the repository, make your changes, and submit a pull request.
