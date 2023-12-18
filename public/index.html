@@ -10,16 +10,20 @@
     <h1>Smart Exercise Reminder</h1>
     <div class="goal-setting">
       <label for="exerciseGoal">Set Exercise Goal (minutes):</label>
-      <input type="number" id="exerciseGoal">
+      <input type="number" id="exerciseGoal" placeholder="Enter goal">
       <button onclick="setGoal()">Set Goal</button>
     </div>
     <div class="exercise-monitor">
       <h2>Exercise Monitor</h2>
-      <p>Exercise Time: <span id="exerciseTime">0</span> minutes</p>
-      <p>Heart Rate: <span id="heartRate">0</span> bpm</p>
-      <p>Calories Burnt: <span id="caloriesBurnt">0</span></p>
-      <button onclick="startExercise()">Start Exercise</button>
-      <button onclick="stopExercise()">Stop Exercise</button>
+      <div class="monitor-data">
+        <p><strong>Exercise Time:</strong> <span id="exerciseTime">0</span> minutes</p>
+        <p><strong>Heart Rate:</strong> <span id="heartRate">0</span> bpm</p>
+        <p><strong>Calories Burnt:</strong> <span id="caloriesBurnt">0</span></p>
+      </div>
+      <div class="exercise-buttons">
+        <button onclick="startExercise()">Start Exercise</button>
+        <button onclick="stopExercise()">Stop Exercise</button>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
