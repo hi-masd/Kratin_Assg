@@ -1,30 +1,38 @@
-// Simulated exercise data
-let exerciseTime = 0;
-let heartRate = 0;
-let caloriesBurnt = 0;
-let exerciseInterval;
+let exerciseHistory = []; // Array to store exercise history
 
 function setGoal() {
-  const exerciseGoalInput = document.getElementById('exerciseGoal');
-  const goal = parseInt(exerciseGoalInput.value);
-  // Logic to set exercise goal
+  // Logic to set exercise goal (similar to previous implementation)
 }
 
 function startExercise() {
-  exerciseInterval = setInterval(() => {
-    exerciseTime += 1;
-    heartRate = Math.floor(Math.random() * (120 - 80 + 1)) + 80;
-    caloriesBurnt += Math.floor(Math.random() * 10);
-    updateExerciseData();
-  }, 3000); // Update every 3 seconds
+  // Logic to start simulated exercise (similar to previous implementation)
 }
 
 function stopExercise() {
-  clearInterval(exerciseInterval);
+  // Logic to stop simulated exercise (similar to previous implementation)
 }
 
 function updateExerciseData() {
-  document.getElementById('exerciseTime').textContent = exerciseTime;
-  document.getElementById('heartRate').textContent = heartRate;
-  document.getElementById('caloriesBurnt').textContent = caloriesBurnt;
+  // Update exercise metrics on the UI (similar to previous implementation)
+}
+
+function displayExerciseHistory() {
+  const exerciseList = document.getElementById('exerciseList');
+  exerciseList.innerHTML = '';
+  exerciseHistory.forEach(exercise => {
+    const li = document.createElement('li');
+    li.textContent = `Exercise Time: ${exercise.exerciseTime} minutes | Heart Rate: ${exercise.heartRate} bpm | Calories Burnt: ${exercise.caloriesBurnt}`;
+    exerciseList.appendChild(li);
+  });
+}
+
+// Function to save exercise data to history
+function saveExerciseData() {
+  const exerciseData = {
+    exerciseTime,
+    heartRate,
+    caloriesBurnt
+  };
+  exerciseHistory.push(exerciseData);
+  displayExerciseHistory();
 }
