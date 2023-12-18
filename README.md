@@ -1,4 +1,4 @@
-Smart Exercise Reminder and Monitoring System
+<b>Smart Exercise Reminder and Monitoring System</b>
 
 Overview
 This repository contains a prototype of a Smart Exercise Reminder and Monitoring System designed to encourage physical activity and track exercise routines for seniors using simulated data.
