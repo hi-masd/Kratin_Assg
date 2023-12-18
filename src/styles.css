@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
 .container {
@@ -10,15 +11,51 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.goal-setting input {
+h1 {
+  text-align: center;
+}
+
+.goal-setting {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  padding: 8px;
   width: 100px;
   margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 button {
   padding: 8px 12px;
   margin-top: 10px;
   cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.exercise-monitor {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.monitor-data p {
+  margin: 5px 0;
+}
+
+.exercise-buttons button {
+  margin-right: 10px;
 }
